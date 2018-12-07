@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,39 +15,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="88a-9v-lr8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="88a-9v-lr8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJC-K9-2ei" userLabel="retangulo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJC-K9-2ei" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-Op-wtE">
-                                        <rect key="frame" x="67" y="28" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-Op-wtE" userLabel="quizNightLogo">
+                                        <rect key="frame" x="87" y="50" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="BLk-iB-anO"/>
+                                            <constraint firstAttribute="height" constant="128" id="tX9-lH-eob"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LD-Fh-alJ">
-                                        <rect key="frame" x="166" y="164" width="38" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LD-Fh-alJ">
+                                        <rect key="frame" x="188" y="214" width="38" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.93472570180892944" green="0.91205483675003052" blue="0.29996040463447571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descubra qual a cidade a partit da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ao-4u-Y6e">
-                                        <rect key="frame" x="40" y="285" width="294" height="97"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.93472570180000003" green="0.91205483679999999" blue="0.29996040460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTi-Nu-qOo" customClass="BotaoComBorda" customModule="QuizNight" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="599" width="294" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTi-Nu-qOo" customClass="BotaoComBorda" customModule="QuizNight" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="794" width="374" height="60"/>
                                         <color key="backgroundColor" red="0.1606941819190979" green="0.2899150550365448" blue="0.34516608715057373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="sjL-CD-9cS"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <state key="normal" title="JOGAR!">
                                             <color key="titleColor" red="0.93472570180000003" green="0.91205483679999999" blue="0.29996040460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -55,19 +50,51 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.8148657570422535" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CTi-Nu-qOo" firstAttribute="bottom" secondItem="tJC-K9-2ei" secondAttribute="bottomMargin" id="3o1-t9-ho7"/>
+                                    <constraint firstItem="CTi-Nu-qOo" firstAttribute="leading" secondItem="tJC-K9-2ei" secondAttribute="leading" constant="20" id="5ox-iu-oNA"/>
+                                    <constraint firstItem="FTp-Op-wtE" firstAttribute="top" secondItem="tJC-K9-2ei" secondAttribute="top" constant="50" id="8D4-my-xta"/>
+                                    <constraint firstItem="6LD-Fh-alJ" firstAttribute="top" secondItem="FTp-Op-wtE" secondAttribute="bottom" constant="36" id="BTj-Jh-gfU"/>
+                                    <constraint firstItem="CTi-Nu-qOo" firstAttribute="centerX" secondItem="6LD-Fh-alJ" secondAttribute="centerX" id="cqk-eq-2kb"/>
+                                    <constraint firstItem="6LD-Fh-alJ" firstAttribute="centerX" secondItem="tJC-K9-2ei" secondAttribute="centerX" id="rxG-Wv-8rH"/>
+                                    <constraint firstItem="FTp-Op-wtE" firstAttribute="centerX" secondItem="tJC-K9-2ei" secondAttribute="centerX" id="t2r-Lb-Wii"/>
+                                </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ao-4u-Y6e">
+                                <rect key="frame" x="62" y="399.66666666666669" width="290" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="VJQ-9Q-78B"/>
+                                    <constraint firstAttribute="width" secondItem="7ao-4u-Y6e" secondAttribute="height" multiplier="290:97" id="gdm-B3-iVm"/>
+                                    <constraint firstAttribute="width" secondItem="7ao-4u-Y6e" secondAttribute="height" multiplier="290:97" id="koS-fe-0bW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.93472570180000003" green="0.91205483679999999" blue="0.29996040460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7ao-4u-Y6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6qa-oF-mWa"/>
+                            <constraint firstItem="7ao-4u-Y6e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FHK-dg-4za"/>
+                            <constraint firstItem="tJC-K9-2ei" firstAttribute="centerY" secondItem="88a-9v-lr8" secondAttribute="centerY" id="Gp5-tM-pId"/>
+                            <constraint firstItem="tJC-K9-2ei" firstAttribute="height" secondItem="88a-9v-lr8" secondAttribute="height" id="Ji3-Gc-10p"/>
+                            <constraint firstItem="88a-9v-lr8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btv-Qp-oHv"/>
+                            <constraint firstItem="tJC-K9-2ei" firstAttribute="width" secondItem="88a-9v-lr8" secondAttribute="width" id="iRS-8X-RBR"/>
+                            <constraint firstItem="tJC-K9-2ei" firstAttribute="centerX" secondItem="88a-9v-lr8" secondAttribute="centerX" id="jIg-y5-WcK"/>
+                            <constraint firstItem="88a-9v-lr8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ja3-xp-mSu"/>
+                            <constraint firstItem="88a-9v-lr8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="lsK-mz-lcg"/>
+                            <constraint firstItem="88a-9v-lr8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n6n-wq-BjS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="1024" height="682.5"/>
-        <image name="logo" width="426.5" height="307.5"/>
+        <image name="bg" width="1024" height="682.66668701171875"/>
+        <image name="logo" width="426.66665649414062" height="307.66665649414062"/>
     </resources>
 </document>
